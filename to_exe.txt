@@ -1,1 +1,2 @@
-pyinstaller --noconfirm --onefile --console  "C:/dev/anosigner.py"
+cd D:\Users\ngam\Documents\GitHub
+pyinstaller --noconfirm --onefile --console  "D:/Users/ngam/Documents/GitHub/anosigner.py"

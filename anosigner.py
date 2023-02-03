@@ -36,6 +36,10 @@ if ( parametro == "-i" ):
       p = subprocess.Popen(cmd, stdout=subprocess.PIPE)
       p.wait()	  
       os.rename(r'' + saida + ficheiro + '_signed.pdf',r'' + saida + ficheiro + '.pdf')     
+      fp.open(r'' + saida + ficheiro + '.UNL')
+      fp.close()
+      fp.open(r'' + saida + 'output.UNL')
+      fp.close()
    except:
       pass
       #messagebox.showinfo("Erro a correr o comando", cmd)
@@ -56,6 +60,10 @@ if ( parametro == "-d" ):
             ficheiros = os.path.splitext(f)
             ficheiro = ficheiros[0]
             os.rename(r'' + saida + ficheiro + '_signed.pdf',r'' + saida + ficheiro + '.pdf')
+            fp.open(r'' + saida + ficheiro + '.UNL')
+            fp.close()
+      fp.open(r'' + saida + 'output.UNL')
+      fp.close()
     except:
       pass  
       #messagebox.showinfo("Erro a correr o comando", cmd)
